@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Tech Innovation Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🚀 Tech Innovation Club</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="join-section">
+            <div class="form-container">
+                <h1>Join Tech Innovation Club</h1>
+                <p class="form-description">Fill out the form below to become a member of our community. We're excited to have you on board!</p>
+                
+                <form class="join-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="branch">Branch/Department *</label>
+                            <select id="branch" name="branch" required>
+                                <option value="">Select your branch</option>
+                                <option value="cse">Computer Science Engineering (CSE)</option>
+                                <option value="ece">Electronics & Communication Engineering (ECE)</option>
+                                <option value="me">Mechanical Engineering (ME)</option>
+                                <option value="ce">Civil Engineering (CE)</option>
+                                <option value="ee">Electrical Engineering (EE)</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="year">Academic Year *</label>
+                            <select id="year" name="year" required>
+                                <option value="">Select your year</option>
+                                <option value="1st">1st Year</option>
+                                <option value="2nd">2nd Year</option>
+                                <option value="3rd">3rd Year</option>
+                                <option value="4th">4th Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="web" name="interests" value="web-dev">
+                                <label for="web">Web Development</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="ai" name="interests" value="ai-ml">
+                                <label for="ai">AI & Machine Learning</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="cloud" name="interests" value="cloud">
+                                <label for="cloud">Cloud Computing</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="cyber" name="interests" value="cybersecurity">
+                                <label for="cyber">Cybersecurity</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="mobile" name="interests" value="mobile">
+                                <label for="mobile">Mobile App Development</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell us about yourself (optional)</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Share your interests, experience, or what you'd like to learn..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Join the Club</button>
+                    <button type="reset" class="reset-btn">Clear Form</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tech Innovation Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
